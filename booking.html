@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预订 - 天津洛伊斯公寓</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>预订</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="apartments.html">公寓介绍</a></li>
+                <li><a href="reviews.html">客户评价</a></li>
+                <li><a href="offers.html">优惠活动</a></li>
+                <li><a href="blog.html">博客</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="booking">
+            <h2>预订公寓</h2>
+            <form action="submit_booking.html" method="post">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">邮箱：</label>
+                <input type="email" id="email" name="email" required>
+                <label for="apartment">选择公寓：</label>
+                <select id="apartment" name="apartment" required>
+                    <option value="studio">豪华单间</option>
+                    <option value="one-bedroom">一居室</option>
+                    <option value="two-bedroom">两居室</option>
+                    <option value="three-bedroom">三居室</option>
+                </select>
+                <label for="checkin">入住日期：</label>
+                <input type="date" id="checkin" name="checkin" required>
+                <label for="checkout">退房日期：</label>
+                <input type="date" id="checkout" name="checkout" required>
+                <button type="submit" class="btn">提交</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 天津洛伊斯公寓</p>
+    </footer>
+</body>
+</html>
